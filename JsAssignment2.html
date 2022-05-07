@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Reg. Form Using local storage js
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./jsAssignment2.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+    </head>
+    <body>
+      <div class="container-fluid">
+         <div class="col-sm-4 col1" >
+            <h2 class="align-center">Reg. Form</h2>
+            <form action="#"  >
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" autocomplete="off" required>
+                    <span id="username" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age" placeholder="Enter Age" name="age" autocomplete="off"required>
+                    <span id="userAge" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" autocomplete="off" required>
+                    <span id="userEmail" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="dob">DateOfBirth:</label>
+                    <input type="date" class="form-control" id="dob" placeholder="Enter Date Of Birth" name="dob" autocomplete="off" required>
+                    <span id="userDob" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="number" class="form-control" id="mobile" placeholder="Enter Mobile Number" name="company" autocomplete="off" required>
+                    <span id="userNumber" class="text-danger font-weight-bold"></span>
+                </div>
+                <button type="button" onclick="saveData() " id="save_btn" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-7 localStorageTableData ">
+            <h2 style="text-align: center;">Users Table</h2>
+            <div class="row bg-primary">
+                <div class="col-sm-2">Name</div>
+                <div class="col-sm-2">Age</div>
+                <div class="col-sm-4">Email</div>
+                <div class="col-sm-2">DOB</div>
+                <div class="col-sm-2">Mobile No</div>
+            </div>
+            <div id="showUsers"></div>
+        </div>
+    </div>
+    </body>
+    <script src="./jsAssignment2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>
